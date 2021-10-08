@@ -3,9 +3,17 @@ iOS Picture In Picture Sample with Swift Language
 
 ## Application Demo
 
-![Sample By Local](SampleByLocal.mp4)
+![Screenshot](pic1.jpg)
 
-![Sample By Url](SampleByUrl.mp4)
+![Screenshot](pic2.jpg)
+
+![Screenshot](pic3.jpg)
+
+![Screenshot](pic4.jpg)
+
+![Screenshot](pic5.jpg)
+
+<br> <br>
 
 ## Resources
 
