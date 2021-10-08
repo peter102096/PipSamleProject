@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PipSampleProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lla-tu-Ud4">
+                                <rect key="frame" x="24" y="821" width="366" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pipBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckR-RJ-Y0L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Picture In Picture Sample by Peter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6r-qP-Wjo">
+                                <rect key="frame" x="16" y="410" width="382" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qJn-dJ-eFi">
+                                <rect key="frame" x="16" y="745" width="382" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vay-KH-oPb">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                        <state key="normal" title="Start by local file"/>
+                                        <connections>
+                                            <action selector="localBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C9c-FO-kRy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCw-45-kKr">
+                                        <rect key="frame" x="0.0" y="30" width="382" height="30"/>
+                                        <state key="normal" title="Start by url"/>
+                                        <connections>
+                                            <action selector="urlBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWy-e3-FWe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y6r-qP-Wjo" secondAttribute="trailing" constant="16" id="2g9-p1-sbG"/>
+                            <constraint firstItem="Lla-tu-Ud4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3W6-4k-gaS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qJn-dJ-eFi" secondAttribute="trailing" constant="16" id="3rH-K7-w9r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lla-tu-Ud4" secondAttribute="trailing" constant="24" id="6cy-Tx-biB"/>
+                            <constraint firstItem="qJn-dJ-eFi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7Lx-WU-UOu"/>
+                            <constraint firstItem="y6r-qP-Wjo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OmX-wk-Ag4"/>
+                            <constraint firstItem="Lla-tu-Ud4" firstAttribute="top" secondItem="qJn-dJ-eFi" secondAttribute="bottom" constant="16" id="Qtk-4c-E5b"/>
+                            <constraint firstItem="y6r-qP-Wjo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="eZW-oe-NpK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lla-tu-Ud4" secondAttribute="bottom" id="jle-ja-MPo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pipBtn" destination="Lla-tu-Ud4" id="mHc-Ov-VXh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
