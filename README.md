@@ -3,9 +3,9 @@ iOS Picture In Picture Sample
 
 ## Application Demo
 
-![Sample By Local](SampleByLocal.mp4)
+![Sample By Local](https://drive.google.com/file/d/1krgNC-Zp8Hw23HFWV-fCXWHNOjr65ETB/view?usp=sharing)
 
-![Sample By Url](SampleByUrl.mp4)
+![Sample By Url](https://drive.google.com/file/d/1apcHrzunrEr9w5ON7oapSsvJjVYkY6C-/view?usp=sharing)
 
 ## Resources
 
