@@ -3,15 +3,15 @@ iOS Picture In Picture Sample with Swift Language
 
 ## Application Demo
 
-![Screenshot](pic1.jpg)
+![Screenshot](pic1.jpg){:height="10%" width="10%"}
 
-![Screenshot](pic2.jpg)
+![Screenshot](pic2.jpg){:height="10%" width="10%"}
 
-![Screenshot](pic3.jpg)
+![Screenshot](pic3.jpg){:height="10%" width="10%"}
 
-![Screenshot](pic4.jpg)
+![Screenshot](pic4.jpg){:height="10%" width="10%"}
 
-![Screenshot](pic5.jpg)
+![Screenshot](pic5.jpg){:height="10%" width="10%"}
 
 <br> <br>
 
