@@ -9,6 +9,10 @@ import UIKit
 import AVKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var localBtn: UIButton!
+    @IBOutlet weak var urlBtn: UIButton!
+    @IBOutlet weak var dismissBtn: UIButton!
     @IBOutlet weak var pipBtn: UIButton!
     
     var pictureInPictureController: AVPictureInPictureController!
@@ -26,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        pipBtn.isEnabled = false
+        setStartBtnEnable(isEnable: true)
     }
 
     @IBAction func pipBtnAction(_ sender: Any) {
@@ -40,12 +44,22 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func dissmissBtnAction(_ sender: Any) {
+        pictureInPictureController.stopPictureInPicture()
+        playerLayer?.removeFromSuperlayer()
+        playerLayer = nil
+        player = nil
+        setStartBtnEnable(isEnable: true)
+    }
+    
     @IBAction func localBtnAction(_ sender: Any) {
         let path = Bundle.main.path(forResource: "Apple", ofType: "mp4")!
         let url = NSURL(fileURLWithPath: path)
         player = AVPlayer(url: url as URL)
         setupPictureInPicture()
     }
+    
     @IBAction func urlBtnAction(_ sender: Any) {
         let videoUrl = URL(string: "https://jsoncompare.org/LearningContainer/SampleFiles/Video/MP4/Sample-MP4-Video-File-Download.mp4")
         player = AVPlayer(url: videoUrl!)
@@ -63,7 +77,7 @@ class ViewController: UIViewController {
         
         if AVPictureInPictureController.isPictureInPictureSupported() {
             print("isPictureInPictureSupported")
-            pipBtn.isEnabled = true
+            setStartBtnEnable(isEnable: false)
             // Create a new controller, passing the reference to the AVPlayerLayer.
             pictureInPictureController = AVPictureInPictureController(playerLayer: playerLayer!)
             pictureInPictureController.delegate = self
@@ -74,6 +88,12 @@ class ViewController: UIViewController {
         }
     }
     
+    func setStartBtnEnable(isEnable: Bool) {
+        localBtn.isEnabled = isEnable
+        urlBtn.isEnabled = isEnable
+        pipBtn.isEnabled = !isEnable
+        dismissBtn.isEnabled = !isEnable
+    }
 }
 
 extension ViewController: AVPictureInPictureControllerDelegate {

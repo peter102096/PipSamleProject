@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qJn-dJ-eFi">
-                                <rect key="frame" x="16" y="745" width="382" height="60"/>
+                                <rect key="frame" x="16" y="715" width="382" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vay-KH-oPb">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
@@ -45,6 +45,13 @@
                                         <state key="normal" title="Start by url"/>
                                         <connections>
                                             <action selector="urlBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWy-e3-FWe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzX-5K-aYi">
+                                        <rect key="frame" x="0.0" y="60" width="382" height="30"/>
+                                        <state key="normal" title="Dismiss PlayerVIew"/>
+                                        <connections>
+                                            <action selector="dissmissBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBm-Ud-58f"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -65,7 +72,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dismissBtn" destination="MzX-5K-aYi" id="xuy-Xw-SCw"/>
+                        <outlet property="localBtn" destination="Vay-KH-oPb" id="TEZ-ky-6Hd"/>
                         <outlet property="pipBtn" destination="Lla-tu-Ud4" id="mHc-Ov-VXh"/>
+                        <outlet property="urlBtn" destination="rCw-45-kKr" id="fJf-0m-hTH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -3,8 +3,6 @@ iOS Picture In Picture Sample with Swift Language
 
 ## Application Demo
 
-
-
 <img src="pic1.jpg" width="20%" height="20%">
 
 <img src="pic2.jpg" width="20%" height="20%">
@@ -15,11 +13,11 @@ iOS Picture In Picture Sample with Swift Language
 
 <img src="pic5.jpg" width="20%" height="20%">
 
-<br> <br>
-
 ## Resources
 
 - [Apple Adopting Picture in Picture](https://developer.apple.com/documentation/avkit/adopting_picture_in_picture_in_a_custom_player)
+
+- [Sample Video](https://www.learningcontainer.com/mp4-sample-video-files-download/#)
 
 ## License
 ```
