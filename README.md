@@ -1,5 +1,5 @@
 # PipSamleProject
-iOS Picture In Picture Sample
+iOS Picture In Picture Sample with Swift Language
 
 ## Application Demo
 
