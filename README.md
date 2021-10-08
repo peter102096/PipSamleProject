@@ -3,7 +3,9 @@ iOS Picture In Picture Sample with Swift Language
 
 ## Application Demo
 
-![Screenshot](pic1.jpg){:height="10%" width="10%"}
+
+
+![Screenshot]<img src="pic1.jpg" width="10%" height="10%">
 
 ![Screenshot](pic2.jpg){:height="10%" width="10%"}
 
